@@ -1,7 +1,7 @@
 " DOTFILES
 " Vim with all enhancements
 source $VIMRUNTIME/vimrc_example.vim
-colorscheme elflord
+colorscheme material
 
 " Use the internal diff if available.
 " Otherwise use the special 'diffexpr' for Windows.
@@ -46,6 +46,7 @@ endfunction
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
 "
 let g:airline_theme='minimalist'
@@ -60,3 +61,4 @@ set noundofile
 set guioptions-=m "menu bar
 set guioptions-=T "toolbar
 set guioptions-=r "scrollbar
+let g:material_theme_style = 'darker'
