@@ -60,5 +60,6 @@ set directory=~/vimtmp,.
 set noundofile
 set guioptions-=m "menu bar
 set guioptions-=T "toolbar
+set guioptions-=L "left scrollbar
 set guioptions-=r "scrollbar
 let g:material_theme_style = 'darker'
