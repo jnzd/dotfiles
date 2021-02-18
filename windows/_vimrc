@@ -1,7 +1,6 @@
 " DOTFILES
 " Vim with all enhancements
 source $VIMRUNTIME/vimrc_example.vim
-colorscheme material
 
 " Use the internal diff if available.
 " Otherwise use the special 'diffexpr' for Windows.
@@ -63,3 +62,4 @@ set guioptions-=T "toolbar
 set guioptions-=L "left scrollbar
 set guioptions-=r "scrollbar
 let g:material_theme_style = 'darker'
+colo material
