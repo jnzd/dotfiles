@@ -57,3 +57,6 @@ set shell=\"C:\Program\ Files\PowerShell\7-preview\pwsh.exe\"
 set backupdir=~/vimtmp,.
 set directory=~/vimtmp,.
 set noundofile
+set guioptions-=m "menu bar
+set guioptions-=T "toolbar
+set guioptions-=r "scrollbar
