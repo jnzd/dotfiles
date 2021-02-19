@@ -8,9 +8,9 @@ call plug#end()
 let g:airline_theme='minimalist'
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
-set guifont=MesloLGS\ NF:h16
+"set guifont=MesloLGS\ NF:h16
 set nu rnu
-set shell=\"C:/Program\ Files/PowerShell/7-preview/pwsh.exe\"
+"set shell=
 set backupdir=~/vimtmp,.
 set directory=~/vimtmp,.
 set noundofile
