@@ -63,4 +63,8 @@ set guioptions-=L "left scrollbar
 set guioptions-=r "scrollbar
 colo material
 let g:material_theme_style = 'darker'
+<<<<<<< HEAD
 set t_ut=
+=======
+set encoding=utf-8
+>>>>>>> refs/remotes/origin/main
