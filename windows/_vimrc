@@ -65,3 +65,5 @@ let g:material_theme_style = 'darker'
 colo material
 set t_ut=
 set encoding=utf-8
+set splitbelow
+set splitright
