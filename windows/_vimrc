@@ -63,3 +63,4 @@ set guioptions-=L "left scrollbar
 set guioptions-=r "scrollbar
 colo material
 let g:material_theme_style = 'darker'
+set encoding=utf-8
