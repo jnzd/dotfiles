@@ -4,8 +4,6 @@ source $VIMRUNTIME/vimrc_example.vim
 
 " Use the internal diff if available.
 " Otherwise use the special 'diffexpr' for Windows.
-set nu
-set background=dark
 if &diffopt !~# 'internal'
   set diffexpr=MyDiff()
 endif
@@ -64,6 +62,13 @@ set guioptions-=r "scrollbar
 let g:material_theme_style = 'darker'
 colo material
 set t_ut=
+set background=dark
 set encoding=utf-8
 set splitbelow
 set splitright
+nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
