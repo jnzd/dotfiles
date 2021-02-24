@@ -1,3 +1,4 @@
-ln -s -f ~/dotfiles/linux/.vimrc ~/.vimrc
-mkdir ~/.config/nvim
-ln -s -f ~/dotfiles/linux/sysinit.vim ~/.config/nvim/init.vim
+ln -s -f ~/.dotfiles/.config/vimrc ~/.vimrc
+mkdir -p ~/.config/nvim
+ln -s -f ~/.dotfiles/.config/vimrc ~/.config/nvim/init.vim
+ln -s -f ~/.dotfiles/.config/i3config ~/.i3/config
