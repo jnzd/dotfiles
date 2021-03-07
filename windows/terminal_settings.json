@@ -3,55 +3,181 @@
     // Add custom actions and keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
     // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
+    
+    "confirmCloseAllTabs": false,
+
     "actions": 
     [
         // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
         // These two lines additionally bind them to Ctrl+C and Ctrl+V.
         // To learn more about selection, visit https://aka.ms/terminal-selection
-        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
-        { "command": "paste", "keys": "ctrl+v" },
-
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
         // Press Ctrl+Shift+F to open the search box
-        { "command": "find", "keys": "ctrl+shift+f" },
-
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
         // Press Alt+Shift+D to open a new pane.
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
-        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
-        { "command": { "action": "splitPane", "split": "auto", "profile": "Ubuntu" }, "keys": "alt+shift+u" },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "profile": "Ubuntu",
+                "split": "auto"
+            },
+            "keys": "alt+shift+u"
+        },
         //{ "command": { "action": "splitPane", "split": "auto", "profile": "Windows PowerShell" }, "keys": "alt+shift+p" },
-        { "command": { "action": "splitPane", "split": "auto", "profile": "PowerShell" }, "keys": "alt+shift+p" }, // 7 for powershell 7
-        { "command": { "action": "splitPane", "split": "auto", "profile": "Command Prompt" }, "keys": "alt+shift+c" },
-        { "command": { "action": "splitPane", "split": "auto", "profile": "fedoraremix" }, "keys": "alt+shift+f" },
-        { "command": { "action": "splitPane", "split": "auto", "profile": "Arch" }, "keys": "alt+shift+a" },
-
-        { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+down" },
-        { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+j" },
-        { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+left" },
-        { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+h" },
-        { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+right" },
-        { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+l" },
-        { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+up" },
-        { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+k" },
-
-        { "command": { "action": "scrollUp" }, "keys": "ctrl+shift+k" },
-        { "command": { "action": "scrollDown" }, "keys": "ctrl+shift+j" }
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "profile": "PowerShell",
+                "split": "auto"
+            },
+            "keys": "alt+shift+p"
+        }, // 7 for powershell 7
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "profile": "Command Prompt",
+                "split": "auto"
+            },
+            "keys": "alt+shift+c"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "profile": "fedoraremix",
+                "split": "auto"
+            },
+            "keys": "alt+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "profile": "Arch",
+                "split": "auto"
+            },
+            "keys": "alt+shift+a"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "alt+down"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "alt+j"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+left"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+h"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "alt+right"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "alt+l"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "alt+up"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "alt+k"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "ctrl+shift+j"
+        }
     ],
+    "alwaysShowTabs": false,
     "copyFormatting": "none",
-    "copyOnSelect": false,
+    "copyOnSelect": true,
     "defaultProfile": "{a3a2e83a-884a-5379-baa8-16f193a13b21}",
     "profiles": 
     {
-        "defaults": {
-            // Put settings here that you want to apply to all profiles.
-            "fontFace": "MesloLGS NF",
-            // "background": "#212121",
-            // "background": "#273340",
-            // "background": "#212121",
+        "defaults": 
+        {
+            "acrylicOpacity": 0.5,
             "background": "#0F161E",
-            "useAcrylic" : true,
-            "acrylicOpacity" : 0.5
+            "fontFace": "MesloLGS NF",
+            "useAcrylic": true
         },
         "list": 
         [
@@ -315,5 +441,8 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "showTabsInTitlebar": true,
+    "tabWidthMode": "titleLength",
+    "theme": "dark"
 }
