@@ -1,3 +1,7 @@
+" DOTFILES
+" Vim with all enhancements
+source $VIMRUNTIME/vimrc_example.vim
+
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -10,8 +14,8 @@ let g:airline_theme='minimalist'
 set guifont=MesloLGS\ NF:h11
 set nu rnu
 set shell=\"C:\Program\ Files\PowerShell\7-preview\pwsh.exe\"
-set backupdir=~/vimtmp,.
-set directory=~/vimtmp,.
+set backupdir=~\vimtmp,.
+set directory=~\vimtmp,.
 set noundofile
 set guioptions-=m "menu bar
 set guioptions-=T "toolbar
@@ -29,7 +33,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-set tabstop=2
 set shiftwidth=2
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 set clipboard=unnamed
