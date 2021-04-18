@@ -1,11 +1,11 @@
 cd C:\tools\vim
 rm _vimrc
-mklink _vimrc %~dp0\windows\_vimrc
+mklink _vimrc %~dp0\windows\vimrc
 rm vimrc
-mklink vimrc %~dp0\windows\_vimrc
+mklink vimrc %~dp0\windows\vimrc
 cd C:\Users\%username%\vimfiles
 rm vimrc
-mklink vimrc %~dp0\windows\_vimrc
+mklink vimrc %~dp0\windows\vimrc
 cd C:\tools\neovim\Neovim\share\nvim
 rm sysinit.vim
 mklink sysinit.vim %~dp0\windows\sysinit.vim
