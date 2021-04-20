@@ -28,7 +28,6 @@ set background=dark
 set encoding=utf-8
 set splitbelow
 set splitright
-set autochdir
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
