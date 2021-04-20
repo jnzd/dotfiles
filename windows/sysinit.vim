@@ -32,3 +32,9 @@ set tabstop=2
 set shiftwidth=2
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 set clipboard=unnamed
+" set vim to chdir for each file
+if exists('+autochdir')
+    set autochdir
+else
+    autocmd BufEnter * silent! lcd %:p:h:gs/ /\\ /
+endif
