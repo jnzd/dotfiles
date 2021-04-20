@@ -31,3 +31,4 @@ nnoremap <C-H> <C-W><C-H>
 set tabstop=2
 set shiftwidth=2
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+set clipboard=unnamed
