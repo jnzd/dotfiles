@@ -4,5 +4,5 @@
 #+l::Send, #{Right}
 #+h::Send, #{Left}
 #+j::Send, #{Down}
-#Enter::Run, wt.exe
+^Enter::Run, wt.exe
 return
