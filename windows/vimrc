@@ -27,6 +27,7 @@ set t_ut=
 set background=dark
 set encoding=utf-8
 set splitbelow
+set spellang=en_us,de_ch,fr_ch
 set splitright
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
