@@ -38,3 +38,4 @@ if exists('+autochdir')
 else
     autocmd BufEnter * silent! lcd %:p:h:gs/ /\\ /
 endif
+set ic scs
