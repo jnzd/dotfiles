@@ -13,6 +13,13 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --set-default-version 2
 ```
 
+[Share SSH keys between Windows and WSL](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/)
+```
+cp -r /mnt/c/Users/<username>/.ssh ~/.ssh
+# fix permissions
+chmod 600 ~/.ssh/id_rsa
+```
+
 ### [Chocolatey](https://chocolatey.org/install)
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -68,4 +75,10 @@ NeoVim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-
+### [Oh My Bash](https://ohmybash.nntoan.com/)
+```
+# install using curl
+sh -c "$(curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+# using wget
+sh -c "$(wget https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+```
