@@ -14,7 +14,7 @@ let g:airline_theme='minimalist'
 "set guifont=MesloLGS\ NF:h11
 set guifont=MesloLGS\ NF:h11
 set nu rnu
-set shell=\"C:\Program\ Files\PowerShell\7-preview\pwsh.exe\"
+set shell=\"C:\Program\ Files\PowerShell\7\pwsh.exe\"
 set backupdir=~\vimtmp,.
 set directory=~\vimtmp,.
 set noundofile
