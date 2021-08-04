@@ -1,14 +1,14 @@
 cd C:\tools\vim
 del _vimrc
-mklink _vimrc %~dp0\windows\vimrc
+mklink _vimrc %~dp0\vimrc
 del vimrc
-mklink vimrc %~dp0\windows\vimrc
+mklink vimrc %~dp0\vimrc
 cd C:\Users\%username%\vimfiles
 del vimrc
-mklink vimrc %~dp0\windows\vimrc
+mklink vimrc %~dp0\vimrc
 cd C:\tools\neovim\Neovim\share\nvim
 del sysinit.vim
-mklink sysinit.vim %~dp0\windows\sysinit.vim
+mklink sysinit.vim %~dp0\vimrc
 cd "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 del macros.ahk
 mklink macros.ahk %~dp0\windows\macros.ahk
