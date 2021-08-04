@@ -77,6 +77,9 @@ inoremap <C-k> <esc>:m .-2<CR>==
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+nnoremap ; :
+vnoremap ; :
+
 
 set shiftwidth=2
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
