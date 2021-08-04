@@ -1,12 +1,14 @@
 "DOTFILES
 syntax on
-if ('has win 64' || 'has win32')
+if (has('win 64') || has('win32'))
   " Windows specific
   set shell=\"C:\Program\ Files\PowerShell\7\pwsh.exe\"
-  set guifont=MesloLGS\ NF:h16
-  " Vim with all enhancements
-  source $VIMRUNTIME/vimrc_example.vim
-elseif ('has linux')
+  set guifont=MesloLGS\ NF:h10
+  if !has('nvim')
+    " Vim with all enhancements
+    source $VIMRUNTIME/vimrc_example.vim
+  endif
+elseif has('linux')
   if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
       \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
