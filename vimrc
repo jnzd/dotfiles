@@ -1,5 +1,8 @@
 "DOTFILES
 syntax on
+" set leader key to spacebar
+nnoremap <SPACE> <Nop>
+let mapleader=" "
 if (has('win 64') || has('win32'))
   " Windows specific
   set shell=\"C:\Program\ Files\PowerShell\7\pwsh.exe\"
@@ -14,6 +17,10 @@ elseif has('linux')
       \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
   endif
+endif
+
+if has('gui_running')
+  autocmd GUIEnter * set vb t_vb=
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -40,10 +47,33 @@ set t_ut=
 set encoding=utf-8
 set splitbelow
 set splitright
+" sensible window movement controls
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+" sensible remaps
+" make Y behave like other captial letters
+nnoremap Y y$
+" keep cursor centered
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+" undo break points
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+inoremap { {<c-g>u
+inoremap ( (<c-g>u
+" moving text
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '>-2<CR>gv=gv
+
 
 set shiftwidth=2
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
