@@ -66,6 +66,8 @@ nnoremap Y y$
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
+nnoremap <C-d> <C-d>zzzv
+nnoremap <C-u> <C-u>zzzv
 
 " undo break points
 inoremap , ,<c-g>u
@@ -86,9 +88,8 @@ vnoremap K :m '<-2<CR>gv=gv
 vnoremap > >gv
 vnoremap < <gv
 
-nnoremap ; :
-vnoremap ; :
-
+" Redo
+nnoremap U <C-r>
 
 set shiftwidth=2
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
