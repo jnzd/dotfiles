@@ -28,7 +28,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+  Plug 'preservim/nerdcommenter'
 call plug#end()
+
+" for nerdcommeter
+filetype plugin on
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
 
 set nu rnu
 set backupdir=~/vimtmp,.
