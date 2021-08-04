@@ -83,6 +83,9 @@ inoremap <C-k> <esc>:m .-2<CR>==
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+vnoremap > >gv
+vnoremap < <gv
+
 nnoremap ; :
 vnoremap ; :
 
