@@ -29,6 +29,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'kaicataldo/material.vim', { 'branch': 'main' }
   Plug 'preservim/nerdcommenter'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " for nerdcommeter
