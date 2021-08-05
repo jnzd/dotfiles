@@ -98,6 +98,9 @@ vnoremap < <gv
 " Redo
 nnoremap U <C-r>
 
+" fzf
+nnoremap <C-p> :Files <CR>
+
 set shiftwidth=2
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 set clipboard=unnamed
