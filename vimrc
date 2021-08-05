@@ -31,6 +31,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdcommenter'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'joshdick/onedark.vim'
 call plug#end()
 
 " for nerdcommeter
@@ -47,8 +48,8 @@ set guioptions-=T "toolbar
 set guioptions-=L "left scrollbar
 set guioptions-=r "scrollbar
 let g:airline_theme='minimalist'
-let g:material_theme_style = 'darker'
-colo material
+"let g:material_theme_style = 'darker'
+colorscheme onedark
 set t_ut=
 set encoding=utf-8
 set splitbelow
