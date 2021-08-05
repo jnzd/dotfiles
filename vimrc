@@ -58,6 +58,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+nnoremap <Leader>H :vertical res -5 <CR>
+nnoremap <Leader>J :res -5 <CR>
+nnoremap <Leader>K :res +5 <CR>
+nnoremap <Leader>L :vertical res +5 <CR>
+
 " sensible remaps
 " make Y behave like other captial letters
 nnoremap Y y$
