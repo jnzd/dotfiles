@@ -32,10 +32,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'joshdick/onedark.vim'
   Plug 'tpope/vim-commentary'
+  Plug 'kana/vim-textobj-user' " requirement for vim-textobj-comment
   Plug 'glts/vim-textobj-comment'
 call plug#end()
 
 set nu rnu
+" save swap and ~ files in dedicated `vimtmp` directory
+" requires the existence of `vimtmp` directory in the home directory
 set backupdir=~/vimtmp,.
 set directory=~/vimtmp,.
 set noundofile
