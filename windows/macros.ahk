@@ -9,6 +9,7 @@
 ; open terminal
 ^Enter::Run, wt.exe
 ; remap capslock to escape and vice versa
+; ISSUE: capslock key still triggers capslock if a key not specified below is pressed while capslock is held
 *CapsLock::Esc
 $Esc::CapsLock
 
