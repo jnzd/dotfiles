@@ -28,16 +28,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-  Plug 'preservim/nerdcommenter'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'joshdick/onedark.vim'
+  Plug 'tpope/vim-commentary'
+  Plug 'glts/vim-textobj-comment'
 call plug#end()
-
-" for nerdcommeter
-filetype plugin on
-let g:NERDCompactSexyComs = 1
-let g:NERDDefaultAlign = 'left'
 
 set nu rnu
 set backupdir=~/vimtmp,.
@@ -48,7 +44,6 @@ set guioptions-=T "toolbar
 set guioptions-=L "left scrollbar
 set guioptions-=r "scrollbar
 let g:airline_theme='minimalist'
-"let g:material_theme_style = 'darker'
 colorscheme onedark
 set t_ut=
 set encoding=utf-8
