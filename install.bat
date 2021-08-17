@@ -7,7 +7,7 @@ set start="C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Prog
 
 :: %~dp0 is the script directory
 :: the :~0,-1% removes the trailing backslash using substrings
-set dotfiles=%~dp0 :: intermediate with trailing backslash
+set dotfiles=%~dp0
 set dotfiles=%dotfiles:~0,-1%
 
 :: set up vim
@@ -17,17 +17,16 @@ if exist %vim% (^
   if exist %vim%\vimrc del %vim%\vimrc
   mklink %vim%\_vimrc %dotfiles%\vimrc
   mklink %vim%\vimrc %dotfiles%\vimrc
-  if exist %vimfiles (^
-    cd %vimfiles%
-    del vimrc
-    mklink vimrc %dotfiles%\vimrc
+  if exist %vimfiles% (^
+    del %vimfiles%\vimrc
+    mklink %vimfiles%\vimrc %dotfiles%\vimrc
   )
 )
 
 :: set up neovim
 if exist %nvim% (^
   if not exist %vimtmp% mkdir %vimtmp%
-  del %nvim%\sysinit.vim
+  if exist %nvim%\sysinit.vim del %nvim%\sysinit.vim
   mklink %nvim%\sysinit.vim %dotfiles%\vimrc
 )
 
