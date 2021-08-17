@@ -9,12 +9,12 @@
 ; open terminal
 ^Enter::Run, wt.exe
 ; remap capslock to escape and vice versa
-$CapsLock::
-$CapsLock Up::Send, {Esc}
+*CapsLock::Esc
 $Esc::CapsLock
 
 ; vim motions everywhere
 ; ISSUE: capslock still lights up and is triggered while held
+; TODO potentially add count to commands
 CapsLock & h::Send, {Left}
 CapsLock & j::Send, {Down}
 CapsLock & k::Send, {Up}
