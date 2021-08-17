@@ -7,7 +7,7 @@ set start="C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Prog
 
 :: %~dp0 is the script directory
 :: the :~0,-1% removes the trailing backslash using substrings
-set dotfiles=%~dp0
+set dotfiles=%~dp0 :: intermediate with trailing backslash
 set dotfiles=%dotfiles:~0,-1%
 
 :: set up vim
