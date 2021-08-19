@@ -40,12 +40,6 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 ### Fonts
 [Meslo Nerd Font patched for Powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 
-### [Oh My Posh](https://ohmyposh.dev/docs/pwsh)
-```
-Install-Module oh-my-posh -Scope CurrentUser
-# see link for installation with scoop or winget
-```
-
 ### [Vim Plug](https://github.com/junegunn/vim-plug)
 Installation
 
@@ -74,11 +68,4 @@ NeoVim
 ```
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-```
-### [Oh My Bash](https://ohmybash.nntoan.com/)
-```
-# install using curl
-sh -c "$(curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-# using wget
-sh -c "$(wget https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 ```
