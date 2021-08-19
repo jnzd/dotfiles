@@ -1,3 +1,3 @@
-REM prompt="%username%@%computername%$s$t$_$p⚡❯$s"
-setx prompt "%username%@%computername%$s$t$_$p>$s"
-cmd /k 
+REM set CMD prompt environment variable:
+setx prompt "$_$p$s🔥➜$s" 
+REM requires restart of CMD
