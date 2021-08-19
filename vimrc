@@ -34,6 +34,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-commentary'
   Plug 'kana/vim-textobj-user' " requirement for vim-textobj-comment
   Plug 'glts/vim-textobj-comment'
+  Plug 'cespare/vim-toml'
 call plug#end()
 
 set nu rnu
