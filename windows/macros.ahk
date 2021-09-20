@@ -9,23 +9,36 @@
 ; open terminal
 ^Enter::Run, wt.exe
 ; remap capslock to escape and vice versa
-; ISSUE: capslock key still triggers capslock if a key not specified below is pressed while capslock is held
-*CapsLock::Esc
-$Esc::CapsLock
 
-; vim motions everywhere
-; ISSUE: capslock still lights up and is triggered while held
-; TODO potentially add count to commands
-CapsLock & h::Send, {Left}
-CapsLock & j::Send, {Down}
-CapsLock & k::Send, {Up}
-CapsLock & l::Send, {Right}
-CapsLock & u::Send, {PgUp}
-CapsLock & d::Send, {PgDn}
-CapsLock & i::Send, {Home}
-CapsLock & a::Send, {End}
-CapsLock & x::Send, {Del}
-CapsLock & y::Send, ^c
-CapsLock & p::Send, ^v
+
+SetCapsLockState, AlwaysOff
+
+#If GetKeyState("CapsLock", "P")
+h::Left
+j::Down
+k::Up
+l::Right
+u::Send, {PgUp}
+d::Send, {PgDn}
+i::Send, {Home}
+a::Send, {End}
+x::Send, {Del}
+y::Send, ^c
+p::Send, ^v
+#If
+
+*CapsLock::
+KeyWait, CapsLock
+if A_ThisHotkey = *CapsLock
+  Send, {Esc}
+
+SetCapsLockState, Off
+
+/* $Esc:: */
+/*   if (GetKeyState("CapsLock", "T")) { */
+/*     SetCapsLockState, Off */
+/*   } else { */
+/*     SetCapsLockState, On */
+/*   } */
 
 return
