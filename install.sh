@@ -5,7 +5,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 # link vimrc to home directory
 ln -sf $SCRIPT_DIR/vimrc ~/.vimrc 
 
-if ! [-d "~/vimtmp" ]; then
+if ! [ -d "~/vimtmp" ]; then
   mkdir -p ~/vimtmp
 fi
 
