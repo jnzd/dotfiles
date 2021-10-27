@@ -1,10 +1,3 @@
-##### FZF #####
-Enable-PsFzfAliases
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
-# replace tab expansion with fzf
-Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
-##### #####
-
 ##### my functions #####
 function eth { set-location ~/onedrive/documents/eth }
 
@@ -53,3 +46,10 @@ Set-PSReadLineOption -PredictionSource History -PredictionViewStyle ListView
 $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 $ENV:STARSHIP_CACHE = "$HOME\AppData\Local\Temp"
 Invoke-Expression (&starship init powershell)
+
+##### FZF #####
+Enable-PsFzfAliases
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+# replace tab expansion with fzf
+Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+##### #####
