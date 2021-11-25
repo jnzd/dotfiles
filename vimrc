@@ -77,12 +77,12 @@ nnoremap <C-d> <C-d>zzzv
 nnoremap <C-u> <C-u>zzzv
 
 " undo break points
-inoremap , ,<c-g>u
-inoremap . .<c-g>u
-inoremap ! !<c-g>u
-inoremap ? ?<c-g>u
-inoremap { {<c-g>u
-inoremap ( (<c-g>u
+" inoremap , ,<c-g>u
+" inoremap . .<c-g>u
+" inoremap ! !<c-g>u
+" inoremap ? ?<c-g>u
+" inoremap { {<c-g>u
+" inoremap ( (<c-g>u
 
 " moving text
 nnoremap <leader>j :m .+1<CR>==
@@ -132,7 +132,7 @@ if has('linux')
   let s:opam_configuration['ocp-index'] = function('OpamConfOcpIndex')
 
   function! OpamConfMerlin()
-    let l:dir = s:opam_share_dir . "/merlin/vim"
+   let l:dir = s:opam_share_dir . "/merlin/vim"
     execute "set rtp+=" . l:dir
   endfunction
   let s:opam_configuration['merlin'] = function('OpamConfMerlin')
