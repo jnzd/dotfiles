@@ -2,7 +2,7 @@ set home=C:\Users\%username%
 set vimtmp=%home%\vimtmp
 set vimfiles=%home%\vimfiles
 set vim=C:\tools\vim
-set nvim=C:\tools\neovim\Neovim\share\nvim
+set nvim=C:\tools\neovim\nvim-win64\share\nvim
 set start="C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 
 REM %~dp0 is the script directory
