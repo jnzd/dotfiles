@@ -4,6 +4,7 @@ set vimfiles=%home%\vimfiles
 set vim=C:\tools\vim
 set nvim=C:\tools\neovim\nvim-win64\share\nvim
 set start="C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+set glaze=%home%\.glaze-wm
 
 REM %~dp0 is the script directory
 REM the :~0,-1% removes the trailing backslash using substrings
@@ -33,3 +34,7 @@ if exist %nvim% (^
 REM add ahk script to autostart
 if exist %start%\macros.ahk del %start%\macros.ahk
 mklink %start%\macros.ahk %dotfiles%\windows\macros.ahk
+
+REM copy glaze-wm config
+if exist %glaze% if exist %glaze%\config.yaml del %home%\config.yaml
+copy %dotfiles%\windows\.glaze-wm\config.yaml %glaze%\config.yaml

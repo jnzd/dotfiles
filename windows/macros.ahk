@@ -7,7 +7,7 @@
 #+h::Send, #{Left}
 #+j::Send, #{Down}
 ; open terminal
-^Enter::Run, wt.exe
+/*^Enter::Run, wt.exe*/
 ; remap capslock to escape and vice versa
 
 
