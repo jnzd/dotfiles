@@ -151,7 +151,7 @@ window_rules:
     match_process_name: "PowerToys.ColorPickerUI"
 
   - command: "toggle floating"
-    match_title: "/^(Open|Save As|Find)/"
+    match_title: "/^(Open|Save As|Find|Replace or Skip Files)/"
 
   - command: "toggle floating"
     match_process_name: "ProtonVPN"
