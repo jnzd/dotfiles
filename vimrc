@@ -35,6 +35,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'kana/vim-textobj-user' " requirement for vim-textobj-comment
   Plug 'glts/vim-textobj-comment'
   Plug 'cespare/vim-toml'
+  Plug 'tpope/vim-fugitive'
 call plug#end()
 
 set nu rnu
@@ -73,10 +74,10 @@ nnoremap Y y$
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
-nnoremap <C-d> <C-d>zzzv
 nnoremap <C-u> <C-u>zzzv
+nnoremap <C-d> <C-d>zzzv
 
-" undo break points
+" undo break poins
 " inoremap , ,<c-g>u
 " inoremap . .<c-g>u
 " inoremap ! !<c-g>u
