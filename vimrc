@@ -36,6 +36,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'glts/vim-textobj-comment'
   Plug 'cespare/vim-toml'
   Plug 'tpope/vim-fugitive'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 set nu rnu
