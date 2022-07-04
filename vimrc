@@ -5,11 +5,12 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 if (has('win 64') || has('win32'))
   " Windows specific
-  set shell=\"C:\Program\ Files\PowerShell\7\pwsh.exe\"
   set guifont=MesloLGS\ NF:h10
   if !has('nvim')
     " Vim with all enhancements
     source $VIMRUNTIME/vimrc_example.vim
+    " set shell to powershell in vim, breaks in neovim
+    " set shell=\"C:\Program\ Files\PowerShell\7\pwsh.exe\"
   endif
 elseif has('linux')
   if empty(glob('~/.vim/autoload/plug.vim'))
