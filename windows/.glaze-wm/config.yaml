@@ -148,7 +148,7 @@ keybindings:
 
 window_rules:
   - command: "ignore"
-    match_process_name: "PowerToys.ColorPickerUI"
+    match_process_name: "/PowerToys*/"
 
   - command: "toggle floating"
     match_title: "/^(Open|Save As|Find|Replace or Skip Files)/"
