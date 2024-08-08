@@ -176,7 +176,7 @@
         {
             "acrylicOpacity": 0.5,
             "background": "#0F161E",
-            "fontFace": "MesloLGS NF",
+            "fontFace": "JetBrainsMono NF",
             "useAcrylic": true
         },
         "list": 
