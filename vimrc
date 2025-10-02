@@ -38,6 +38,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'cespare/vim-toml'
   Plug 'tpope/vim-fugitive'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'tpope/vim-surround'
 call plug#end()
 
 set nu rnu
